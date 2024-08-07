@@ -1,0 +1,175 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #2c2c2c;
+  align-items: center;
+}
+
+.header .logo{
+  margin-left: 2rem;
+}
+.search {
+  position: relative;
+  display: inline-block;
+}
+
+.search input {
+  margin-right: 58rem; 
+  padding: 0.5em;
+  border-radius: 4px;
+  border: none;
+}
+.search .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 60rem; 
+  transform: translateY(-50%);
+  color: #aaa;
+  pointer-events: none; /* So it doesn't interfere with input */
+}
+
+.user-info{
+  margin-right: 2rem;
+}
+.user-info .icon {
+  margin-left: 1em;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #aaa;
+}
+
+.user-info .icon img{
+position: relative;
+top: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+
+
+
+.dot {
+ position: absolute;
+  top:18px;
+  right:109px; 
+  height: 7px;
+  width: 7px;
+  background-color: red; /* Color of the dot */
+  border-radius: 50%;
+  border: 2px solid white; /* Optional: border to make the dot more prominent */
+}
+
+
+/* responsive */
+
+/* Breakpoint 1200px and below */
+@media (max-width: 1200px) {
+  .search input {
+    margin-right: 30rem;
+  }
+
+  .search .search-icon {
+    right: 31rem;
+  }
+}
+
+/* Breakpoint 1024px and below */
+@media (max-width: 1024px) {
+  .header {
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+  }
+
+  .search input {
+    margin-right: 26rem;
+    width: 32%;
+  }
+
+  .search .search-icon {
+    right: 21rem;
+  }
+
+  .user-info {
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+  .dot {
+    top: 30px;
+    right: 75px;
+  }
+}
+
+/* Breakpoint 768px and below */
+@media (max-width: 885px) {
+  .user-info {
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+  .header .logo {
+    margin-left: 1rem;
+  }
+
+  .search input {
+    margin-right: 22rem;
+    width: 32%;
+  }
+
+  .search .search-icon {
+    right: 23rem;
+  }
+
+  .user-info {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 761px) {
+  .search input {
+    margin-right: 18rem;
+    
+}
+}
+
+/* Breakpoint 480px and below */
+@media (max-width: 480px) {
+ 
+  .header .logo {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .search input {
+    margin-right: 0;
+    width: calc(100% - 1rem);
+  }
+
+  .search .search-icon {
+    right: 1rem;
+  }
+
+  .user-info {
+    margin-right: 0;
+    margin-top: 0.5rem;
+    font-size: 13px;
+  }
+
+  .user-info .icon {
+    margin-left: 0.5em;
+  }
+
+  .dot {
+    top: 22px;
+    right: 65px;
+}
+}

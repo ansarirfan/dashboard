@@ -1,0 +1,149 @@
+.sidebar {
+  width: 100px;
+  background-color: #2c2c2c;
+  padding:1 rem;
+  position: fixed;
+  height: 100%;
+}
+
+
+.sidebar .icon{
+
+  margin-left: 5px;
+}
+
+.sidebar .icon ul {
+  list-style: none;
+}
+
+ .sidebar .icon ul li {
+  display: flex;
+  align-items: center;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s ease-in-out;
+}
+
+.sidebar .icon  li:hover {
+  color: #007bff; /* Color on hover */
+  background-color: #e9ecef; /* Background color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+  padding: 7px; /* Add padding for a better hover effect */
+}
+
+.sidebar .icon ul li:last-child{
+  margin-top: 20rem;
+}
+
+.sidebar .icon li.active {
+  color: white; /* Active icon color */
+  background-color: #007bff; /* Active background color */
+  border-radius: 5px;
+  padding: 10px; /* Add padding for a better active effect */
+}
+
+/* responsive */
+/* Breakpoint 1200px and below */
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 80px; /* Adjust sidebar width */
+  }
+
+  .sidebar .icon ul li {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .sidebar .icon ul li:last-child {
+    margin-top: 15rem;
+  }
+}
+
+/* hide */
+.sidebar.visible {
+  transform: translateX(0);
+}
+
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 85px;
+  left: 10px;
+  z-index: 1000;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+ 
+}
+
+/* Breakpoint 1024px and below */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 70px; /* Adjust sidebar width */
+  }
+
+  .sidebar .icon ul li {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .sidebar .icon ul li:last-child {
+    margin-top: 12rem;
+  }
+}
+
+/* Breakpoint 768px and below */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px; /* Adjust sidebar width */
+  }
+
+  .sidebar .icon ul li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .sidebar .icon ul li:last-child {
+    margin-top: 10rem;
+  }
+}
+
+/* Breakpoint 480px and below */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%; /* Make sidebar full width */
+    height: auto; /* Adjust height */
+    
+  }
+
+  .sidebar .icon {
+    margin-left: 0;
+  }
+
+  .sidebar .icon ul {
+    display: flex;
+    flex-direction: row; /* Change direction to row */
+    justify-content: space-around; /* Distribute items evenly */
+  }
+
+  .sidebar .icon ul li {
+    padding: 0.5rem;
+    flex: 1; /* Make items take equal space */
+  }
+
+  .sidebar .icon ul li:last-child {
+    margin-top: 0; /* Remove top margin */
+  }
+
+  /* hide and visible */
+  .sidebar.visible {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+}

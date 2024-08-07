@@ -1,0 +1,136 @@
+.customer-feedback{
+
+    width: 30%;
+    background-color: #333;
+    padding: 1em;
+    border-radius: 8px;
+}
+.feedback {
+    margin-top: 1rem;
+    
+  }
+  
+  .feedback p {
+    margin: 0.5rem 0;
+  }
+
+  .feedback strong{
+    font-size: 10px;
+  }
+
+  .feedback img{
+    width: 30px;
+    height: 30px;
+    gap: 1rem;
+    
+  }
+  
+  .feedback small{
+    font-size: 10px;
+  }
+  
+
+  .feedback p  {
+   color: yellow;
+   font-size: 10px;
+  }
+
+  /* responsive */
+
+/* Breakpoint 1200px and below */
+@media (max-width: 1200px) {
+  .customer-feedback {
+    width: 40%;
+  }
+
+  .feedback p {
+    font-size: 9px;
+  }
+
+  .feedback strong {
+    font-size: 9px;
+  }
+
+  .feedback img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .feedback small {
+    font-size: 9px;
+  }
+}
+
+/* Breakpoint 1024px and below */
+@media (max-width: 1024px) {
+  .customer-feedback {
+    width: 50%;
+  }
+
+  .feedback p {
+    font-size: 8px;
+  }
+
+  .feedback strong {
+    font-size: 8px;
+  }
+
+  .feedback img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .feedback small {
+    font-size: 8px;
+  }
+}
+
+/* Breakpoint 768px and below */
+@media (max-width: 768px) {
+  .customer-feedback {
+    width: 70%;
+  }
+
+  .feedback p {
+    font-size: 7px;
+  }
+
+  .feedback strong {
+    font-size: 7px;
+  }
+
+  .feedback img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .feedback small {
+    font-size: 7px;
+  }
+}
+
+/* Breakpoint 480px and below */
+@media (max-width: 480px) {
+  .customer-feedback {
+    width: 96%;
+    padding: 0.5em;
+  }
+
+  .feedback p {
+    font-size: 6px;
+  }
+
+  .feedback strong {
+    font-size: 14px;
+  }
+
+  .feedback img {
+    width: 20px;
+    height: 20px;
+   
+  }
+
+  .feedback small {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,114 @@
+
+  .activity {
+    background-color: #333;
+    padding: 1em;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 50px;
+    text-align: center;
+  }
+  .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+   
+  .name div:nth-child(1){
+    margin-right: 1rem;
+  }
+
+  .name div:last-child>small{ 
+    margin-right: 1rem;
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+   
+  }
+  .graph {
+    
+    margin-left: 5rem;
+    width: 127%;
+    height: 414%;
+  }
+  
+  .graph canvas {
+    width: 60% !important;
+    height: 20% !important;
+  }
+
+  /* responsive */
+  /* Breakpoint 1200px and below */
+@media (max-width: 1200px) {
+  .graph {
+    margin-left: 4rem;
+    width: 100%;
+    height: 300%;
+  }
+
+  .graph canvas {
+    width: 50% !important;
+    height: 25% !important;
+  }
+}
+
+/* Breakpoint 1024px and below */
+@media (max-width: 1024px) {
+  .name {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .graph {
+    margin-left: 3rem;
+    width: 100%;
+    height: 250%;
+  }
+
+  .graph canvas {
+    width: 90% !important;
+    height: 30% !important;
+  }
+}
+
+/* Breakpoint 768px and below */
+@media (max-width: 768px) {
+  .name {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .graph {
+    margin-left: 2rem;
+    width: 100%;
+    height: 200%;
+  }
+
+  .graph canvas {
+    width: 90% !important;
+    height: 35% !important;
+  }
+
+  .activity {
+    margin-bottom: 1rem;
+}
+}
+
+/* Breakpoint 480px and below */
+@media (max-width: 480px) {
+  .name {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .graph {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .graph canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

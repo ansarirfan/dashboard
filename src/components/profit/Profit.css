@@ -1,0 +1,159 @@
+  
+/* new profit */
+.newProfit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+  }
+  
+  .setProfit{
+      background-color: #333;
+      padding: 36px;
+      border-radius:10px ;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      /* position: relative; */
+  
+  }
+  
+  .leftProfit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+  
+  .leftProfit div>h4{
+   font-size: 10px;
+   margin-bottom: 20px;
+  }
+  
+  .leftProfit span{
+    font-size: 25px;
+    margin-bottom: 5px;
+   
+  }
+  
+  .increaseValue{
+     
+     margin-top: 17px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     color: lightgreen;
+     gap: 1rem;
+  }
+  
+  .increaseValue>span ,p{
+  font-size: 15px;
+  }
+  
+  .radialBar{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    
+    background-color: white;
+  }
+  
+  .radialBar p{
+    font-size: 7px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 100%;
+  } 
+  
+  .progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: black;
+  }
+  
+  /* responsive */
+  /* Breakpoint 1200px and below */
+@media (max-width: 1200px) {
+  .newProfit {
+    width: 40%;
+  }
+
+  .setProfit {
+    padding: 30px;
+  }
+
+  .leftProfit div > h4 {
+    font-size: 9px;
+  }
+
+  .leftProfit span {
+    font-size: 22px;
+  }
+
+  .increaseValue > span, p {
+    font-size: 14px;
+  }
+
+  .radialBar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .progress-text {
+    font-size: 10px;
+  }
+}
+
+/* Breakpoint 1024px and below */
+@media (max-width: 1024px) {
+  .newProfit {
+    width: 50%;
+  }
+
+  .setProfit {
+    padding: 24px;
+    width: 166%;
+  }
+
+  .leftProfit div > h4 {
+    font-size: 8px;
+  }
+
+  .leftProfit span {
+    font-size: 20px;
+  }
+
+  .increaseValue > span, p {
+    font-size: 13px;
+  }
+
+  .radialBar {
+    width: 110px;
+    height: 110px;
+  }
+
+  .progress-text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .setProfit{
+    padding: 24px;
+  width: 178%;
+  }
+}

@@ -1,0 +1,122 @@
+
+
+.recent-orders {
+    /* flex: 1; */
+    width: 72%;
+    background-color: #333;
+    padding: 1em;
+    border-radius: 8px;
+    /* box-sizing: border-box; */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table th{
+    padding: 14px;
+    border-bottom: 1px solid #444;
+    font-size: 15px;
+  }
+   table td {
+    padding: 14px;
+    border-bottom: 1px solid #444;
+    font-size: 14px;
+  }
+
+  table tr td img{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 5px;
+    
+  }
+
+  .status-delivered {
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+  }
+  
+  .status-pending {
+    background-color: orange;
+    color: white;
+  }
+  
+  .status-cancelled {
+    background-color: red;
+    color: white;
+  }
+  
+
+  /* responsive */
+
+/* Breakpoint 1200px and below */
+@media (max-width: 1200px) {
+  .recent-orders {
+    width: 80%;
+  }
+
+  table th, table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  table tr td img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Breakpoint 1024px and below */
+@media (max-width: 1024px) {
+  .recent-orders {
+    width: 85%;
+  }
+
+  table th, table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  table tr td img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Breakpoint 768px and below */
+@media (max-width: 768px) {
+  .recent-orders {
+    width: 90%;
+  }
+
+  table th, table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  table tr td img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* Breakpoint 480px and below */
+@media (max-width: 480px) {
+  .recent-orders {
+    width: 96%;
+    padding: 0.5em;
+  }
+
+  table th, table td {
+    padding: 6px;
+    font-size: 11px;
+  }
+
+  table tr td img {
+    width: 12px;
+    height: 12px;
+  }
+}

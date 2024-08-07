@@ -1,0 +1,176 @@
+
+.card {
+  background-color: #333;
+  padding: 1em;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 50px;
+  text-align: center;
+}
+
+
+
+.r-card .icon.positive,
+.r-card .growth.positive {
+  color: green;
+}
+
+.r-card .icon.negative,
+.r-card .growth.negative {
+  color: red;
+}
+
+.card-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.card .card-icon {
+  background: rgb(103 95 111);
+  width: 30px;
+  height: 30px;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.l-card h3{
+  font-size: 10px;
+}
+
+.l-card>p{
+  font-size: 25px !important;
+}
+
+.r-card p{
+  position: relative;
+  right: 2rem;
+  top: 2rem;
+}
+
+/* responsive */
+
+/* Breakpoint 1200px and below */
+@media (max-width: 1200px) {
+  .card-content {
+    
+    align-items: flex-start;
+  }
+
+  .card .card-icon {
+    width: 25px;
+    height: 25px;
+    padding: 0.75rem;
+    font-size: 1.5em;
+  }
+
+  .r-card p {
+    right: 1.5rem;
+    top: 2.5rem;
+  }
+}
+
+/* Breakpoint 1024px and below */
+@media (max-width: 1024px) {
+  
+  .card-content {
+    /* flex-direction: column; */
+    align-items: flex-start;
+  }
+  
+  
+
+  .card .card-icon {
+    width: 25px;
+    height: 25px;
+    padding: 0.75rem;
+    font-size: 1.5em;
+  }
+
+  .r-card p {
+    right: 1rem;
+    top: 1rem;
+  }
+
+  .l-card h3 {
+    font-size: 9px;
+  }
+
+  .l-card > p {
+    font-size: 22px !important;
+  }
+}
+
+/* Breakpoint 768px and below */
+@media (max-width: 768px) {
+  .card-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card {
+    padding: 0.75em;
+  }
+
+  .card .card-icon {
+    width: 20px;
+    height: 20px;
+    padding: 0.5rem;
+    font-size: 1.2em;
+  }
+
+  .r-card p {
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+
+  .l-card h3 {
+    font-size: 8px;
+  }
+
+  .l-card > p {
+    font-size: 20px !important;
+  }
+}
+
+/* Breakpoint 480px and below */
+@media (max-width: 480px) {
+  .card-content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  } 
+
+  .card {
+    padding: 2rem;
+    
+  }
+
+  .card .card-icon {
+    
+    padding: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .r-card p {
+    right: 1.25rem;
+    top: 2.25rem;
+  }
+  .r-card small{
+    left: 2rem;
+  }
+  
+
+  .l-card{
+    margin-right: 2erm;
+  }
+
+  .l-card h3 {
+    font-size: 15px;
+  }
+
+  .l-card > p {
+    font-size: 35px !important;
+  }
+}
